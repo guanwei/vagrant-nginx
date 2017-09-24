@@ -34,7 +34,7 @@ Vagrant.configure("2") do |config|
     
     config.vm.define "nginx-docker" do |node|
       node.vm.hostname = "nginx-docker"
-      node.vm.network "private_network", ip: "10.10.10.12"
+      node.vm.network "private_network", ip: "10.10.10.10"
       node.vm.provider "virtualbox" do |v|
         v.name = "nginx-docker"
         v.cpus = "1"
